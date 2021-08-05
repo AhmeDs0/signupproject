@@ -1,0 +1,254 @@
+/* Variables */
+:root {
+    --main-color : #2196f3;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-color);
+}
+.box {
+    width: 375px;
+    height: 600px; 
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 3px;
+}
+.box h1 {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.box input[type=text] , input[type=email] , input[type=password] , input[type=text] {
+    border: 0;
+    background: none;
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: solid 1px #d3d3d3;
+    width: 270px;
+    padding-bottom: 10px;
+    outline: none;
+    border-radius: 0px;
+    padding-left: 20px;
+    transition: 0.3s;
+    margin-top: 30px;
+}
+
+.box input[type=text]:focus{
+    border-bottom: solid 1px var(--main-color);
+}
+.box input[type=email]:focus  {
+    border-bottom: solid 1px var(--main-color);
+}
+.box input[type=password]:focus {
+    border-bottom: solid 1px var(--main-color);
+}
+.box input[type=password]:focus { 
+    border-bottom: solid 1px var(--main-color);
+}
+
+.box .user {
+    position: absolute;
+    margin-top: 11px ;
+    margin-left: 53px;
+    color: #999999;
+    font-size: 13px;
+}
+.box .fas.fa-envelope-open {
+    position: absolute;
+    margin-top: 72px ;
+    margin-left: 53px;
+    color: #999999;
+    font-size: 13px;
+}
+.box .divicon {
+    position: absolute;
+    margin-top: 192px ;
+    margin-left: 53px;
+    color: #999999;
+    font-size: 13px;
+}
+.box .diviconn {
+    position: absolute;
+    margin-top: 131px ;
+    margin-left: 53px;
+    color: #999999;
+    font-size: 13px;
+}
+.box .login {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--main-color);
+    margin-top: 23px;
+    justify-content: center;
+    height: 40px;
+    width: 270px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+    
+}
+.box .login:hover {
+    position: relative;
+    transform: translate(-50%,-5%);
+    opacity: 0.9;
+}
+.box .p1 {
+    display: flex;
+    position: absolute;
+    margin-top: 30px;
+    font-weight: 500;
+    left: 38%;
+    transform: translateX(-50%);
+    color: #757575;
+}
+.box .p2 {
+    display: flex;
+    position: absolute;
+    margin-top: 30px;
+    color: var(--main-color);
+    left: 65%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+
+}
+.box .p2:hover {
+    opacity: 0.8;
+}
+.box .border {
+    width: 270px;
+    color: white;
+    border-bottom: dashed 1px #d3d3d3;
+    margin-left: 53px;
+    border-radius: 0px;
+    margin-top: 80px;
+}
+.register {
+    position: absolute;
+    margin-top: 110px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #5c5c5c;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.box .facebook {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #3b5998;
+    border-radius: 50%;
+    left: 40%;
+    transform: translateX(-50%);
+    margin-right: 10px;
+    margin-top: 60px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.box .twitter {
+    display: flex;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #1da1f2;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.box .google {
+    display: flex;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #db4437;
+    border-radius: 50%;
+    margin-top: 60px;
+    left: 60%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.box .fab.fa-facebook-f {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    margin-top: 7px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.box .fab.fa-twitter {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    margin-top: 7px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.box .fab.fa-google-plus-g {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    margin-top: 7px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.box .google:hover + i:last-child  {
+    opacity: 0.9;
+    transform: translate(-50%, -10%);
+}
+.box .google:hover {
+    opacity: 0.9;
+    transform: translate(-50%, -5%);
+}
+.box .twitter:hover + i:last-child  {
+    opacity: 0.9;
+    transform: translate(-50%, -10%);
+}
+.box .twitter:hover {
+    opacity: 0.9;
+    transform: translate(-50%, -5%);
+}
+.box .facebook:hover + i:nth-child(1)  {
+    opacity: 0.9;
+    transform: translate(-50%, -10%);
+}
+.box .facebook:hover {
+    opacity: 0.9;
+    transform: translate(-50%, -5%);
+}
